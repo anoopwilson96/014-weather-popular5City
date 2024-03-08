@@ -28,7 +28,105 @@ main{
   background-color: rgb(240, 255, 255);
 }
 
+/* 1. .mSection1:
 
+This code block defines a CSS class named .mSection1. It sets the padding of the element to 1rem using the padding property. 
+A rem unit is relative to the font size of the root element (usually the <html> element). So, if the font size of the root element is 16px, then 1rem would be equal to 16px. */
+
+.mSection1{
+  padding: 1rem;
+  }
+  /*2. .slider-wrapped:
+  
+  This code block defines a CSS class named .slider-wrapped. It sets the following properties for the element:
+  
+  position: relative: This sets the positioning of the element relative to its normal position in the document flow. 
+  This allows the child element .slider-nav to be positioned absolutely within the .slider-wrapped element.
+  max-width: 60rem: This sets the maximum width of the element to 60rem (rem units).
+  margin: 0 auto: This sets the margin of the element to 0 on the top and bottom, and auto on the left and right sides. 
+  This will center the element horizontally within its parent container. */
+  
+  .slider-wrapped{
+    position: relative;
+    max-width: 60rem;
+    margin: 0 auto;
+  }
+  /*3. .slider:
+  
+  This code block defines a CSS class named .slider. It sets the following properties for the element:
+  
+  display: flex: This sets the element to be displayed as a flex container, allowing its child elements to be arranged flexibly.
+  aspect-ratio: 16/9: This sets the aspect ratio of the element to 16:9, which is a common aspect ratio for widescreen displays.
+  overflow-x: auto: This sets the overflow behavior for the x-axis to auto. This will add a horizontal scrollbar if the content overflows the width of the container.
+  scroll-snap-type: x mandatory: This enables scroll snapping on the x-axis, and sets the snap points to be mandatory. This means that the scrolling will snap to the nearest image when the user scrolls.
+  scroll-behavior: smooth: This sets the scrolling behavior to be smooth, meaning that the scrolling will animate when the user interacts with the scrollbar.
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25): This adds a box shadow to the element with the following properties:
+  The first two values (0 1.5rem) specify the horizontal and vertical offset of the shadow, respectively.
+  The third value (3rem) specifies the blur radius of the shadow.
+  The fourth value (-0.75rem) specifies the spread of the shadow.
+  hsla(0, 0%, 0%, 0.25) specifies the color of the shadow as a black color with 25% opacity.
+  border-radius: .5rem: This sets the border radius of the element to 0.5rem, which creates rounded corners. */
+  
+  .slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x:auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25) ;
+    border-radius: .5rem;
+  }
+  
+  /* 4. .slider img:
+  
+  This code block defines styles for images within the element with the class .slider. It sets the following properties:
+  
+  flex: 1 0 100%: This sets the flex properties for the image.
+  flex: 1: This makes the image flex and grow to fill the available space in the flex container.
+  0: This sets the minimum width of the image to be 0.
+  100%: This sets the width of the image to be 100% of the available space in the flex container.
+  scroll-snap-align: start: This aligns the image to the start of the scroll snap point.
+  object-fit: cover: This sets the object-fit property of the image to "cover". This will resize the image to cover the entire area of its container, while maintaining its aspect ratio. 
+  If the image is larger than the container, it will be cropped to fit. */
+  
+  .slider img{
+  flex: 1 0 100%; 
+  scroll-snap-align: start;
+  object-fit: cover;
+  }
+  
+  /* 5. .slider-nav:
+  
+  This code block defines a CSS class named .slider-nav. It sets the following properties for the element:
+  
+  display: flex: This sets the element to be displayed as a flex container, allowing its child elements (the navigation dots) to be arranged in a row.
+  column-gap: 1rem: This sets the gap between the navigation dots to 1rem.
+  position: absolute: This sets the positioning of the element to absolute. This allows the element to be positioned relative to its closest positioned ancestor element (which is .slider-wrapped in this case).
+  left: 50%;: This sets the left edge of the element to 50% of its containing element's width.
+  transform: translateX(-50%);: This translates the element horizontally by -50% of its own width. This is commonly used with absolute positioning to center the element horizontally within its containing element.
+  z-index: 1;: This sets the stacking order of the element. An element with a higher z-index will be displayed on top of elements with lower z-indexes. In this case, setting z-index: 1 ensures that the navigation dots are displayed on top of the slider images. */
+  
+  .slider-nav{
+  display: flex; 
+  column-gap: 1rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  }
+  
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms ;
+  }
+  .slider-nav a :hover{
+    opacity: 1;
+  }
+  
 
 
 
