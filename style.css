@@ -14,8 +14,19 @@
   gap: 1rem;
 }
  
+header{
 
-
+  font-family: "Roboto Condensed", sans-serif;
+ /* background-color: #dadde0; */
+ padding-bottom: 0.75rem;
+ padding-top: .55rem;
+ background-color: rgb(140, 136, 136); /* For browsers that do not support gradients */
+ background-image: linear-gradient(rgb(240, 234, 234), #5685ecc9); 
+ border-bottom: solid black 1px;
+}
+main{
+  background-color: rgb(240, 255, 255);
+}
 
 
 
@@ -61,9 +72,25 @@
 /* Styles for screens between 992px and 1199.98px (Large devices) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* Your styles for large screens go here */
+  #logo{
+    height: 65px;
+  }
+
+
+
+
+
 }
 
 /* Styles for screens 1200px and larger (Extra Large devices) */
 @media (min-width: 1200px) {
   /* Your styles for extra large screens go here */
+  #logo{
+    height: 65px;
+  }
+
+
+
+
+
 }
