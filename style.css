@@ -21,7 +21,7 @@ header{
  padding-bottom: 0.75rem;
  padding-top: .55rem;
  background-color: rgb(140, 136, 136); /* For browsers that do not support gradients */
- background-image: linear-gradient(rgb(240, 234, 234), #5685ecc9); 
+ background-image: linear-gradient(rgb(240, 234, 234), #0d5e84c9); 
  border-bottom: solid black 1px;
 }
 main{
