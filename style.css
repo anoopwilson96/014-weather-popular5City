@@ -9,9 +9,9 @@
 #logoText{
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  align-items:center;
+  justify-content: space-around;
+  
 }
  
 header{
@@ -127,7 +127,10 @@ A rem unit is relative to the font size of the root element (usually the <html> 
     opacity: 1;
   }
   
+#section1note{
+  padding: 2rem;
 
+}
 
 
 
